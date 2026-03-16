@@ -1,12 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人作品集</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">作品集</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="works.html">作品展示</a></li>
+                <li><a href="roles.html">角色设计</a></li>
+                <li><a href="chat.html">AI对话</a></li>
+                <li><a href="resume.html">简历</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h2>欢迎来到我的作品集</h2>
+            <p>展示我的作品和AI角色设计</p>
+            <div class="about-summary">
+                <p>我是一名专业的设计师/开发者，专注于创意设计和技术实现。我的专业领域包括UI/UX设计、前端开发、角色设计等。</p>
+                <a href="works.html" class="btn">了解更多</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-works">
+        <div class="container">
+            <div class="section-header">
+                <h3>精选作品</h3>
+                <a href="works.html" class="btn">查看全部作品</a>
+            </div>
+            <div class="works-grid">
+                <div class="work-item">
+                    <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=professional%20portfolio%20work%20example&image_size=square" alt="作品1">
+                    <h4>作品标题1</h4>
+                    <p>作品描述1</p>
+                </div>
+                <div class="work-item">
+                    <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=creative%20design%20project&image_size=square" alt="作品2">
+                    <h4>作品标题2</h4>
+                    <p>作品描述2</p>
+                </div>
+                <div class="work-item">
+                    <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=artistic%20portfolio%20piece&image_size=square" alt="作品3">
+                    <h4>作品标题3</h4>
+                    <p>作品描述3</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-roles">
+        <div class="container">
+            <h3>AI角色设计</h3>
+            <div class="roles-grid" id="home-roles-grid">
+                <!-- 角色卡片将通过JavaScript动态添加 -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 个人作品集</p>
+        </div>
+    </footer>
+
+    <script src="roles/roles.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>
